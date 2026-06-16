@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Clínica Olho" description="A organização ACME é um exemplo de uma hierarquia típica. Pode ser usado para desenvolvimento.">
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Clínica Olho" description="">
   <customUserInfoDefinitions/>
   <users>
     <user userName="william.jobs">
@@ -497,9 +497,21 @@
     </user>
   </users>
   <roles>
-    <role name="Funcionário">
-      <displayName>Funcionário</displayName>
-      <description></description>
+    <role name="Recepcionista">
+      <displayName>Recepcionista</displayName>
+      <description>Responsável pelo atendimento, agendamento e venda de lente.</description>
+    </role>
+    <role name="Médico">
+      <displayName>Médico</displayName>
+      <description>Médico oftalmologista responsável por realizar consulta e procedimento.</description>
+    </role>
+    <role name="Atendente pré-consulta">
+      <displayName>Atendente pré-consulta</displayName>
+      <description>Responsável por realizar a pré-consulta com o paciente e acompanhá-lo até a sala de consulta.</description>
+    </role>
+    <role name="Técnico de saúde">
+      <displayName>Técnico de saúde</displayName>
+      <description>Responsável por realizar exames com equipamentos automatizados.</description>
     </role>
   </roles>
   <groups>
@@ -512,8 +524,8 @@
     <group name="Corpo Clínico" parentPath="/Clínica">
       <displayName>Corpo Clínico</displayName>
     </group>
-    <group name="Equipe pré-consulta" parentPath="/Clínica">
-      <displayName>Equipe pré-consulta</displayName>
+    <group name="Pré-consulta" parentPath="/Clínica">
+      <displayName>Pré-consulta</displayName>
     </group>
     <group name="T.I" parentPath="/Clínica">
       <displayName>T.I</displayName>
@@ -522,79 +534,79 @@
   <memberships>
     <membership>
       <userName>william.jobs</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>helen.kelly</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>walter.bates</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>zachary.williamson</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>patrick.gardenier</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>virginie.jomphe</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>thorsten.hartmann</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>jan.fisher</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>isabel.bleasdale</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>favio.riviera</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>michael.morrison</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>marc.marseau</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>joseph.hovell</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>mauro.zetticci</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>thomas.wallis</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>daniela.angelo</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>misa.kumagai</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>norio.yamazaki</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
     <membership>
       <userName>giovanna.almeida</userName>
-      <roleName>Funcionário</roleName>
+      <roleName>Recepcionista</roleName>
     </membership>
   </memberships>
 </organization:Organization>
