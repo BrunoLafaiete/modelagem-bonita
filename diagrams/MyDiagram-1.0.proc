@@ -234,6 +234,9 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_NLQmwGOTEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_GzGOIG5EEfGX2cXNLLb0FA" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_GzIDUG5EEfGX2cXNLLb0FA" name="initAtendimento" content="return new clinicaOlho.model.AtendimentoOftalmologico()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="clinicaOlho.model.AtendimentoOftalmologico"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_f4iqMx4XEfG_jsm1Ob_k5A">
         <targetForm xmi:type="expression:Expression" xmi:id="_f4iqNB4XEfG_jsm1Ob_k5A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
