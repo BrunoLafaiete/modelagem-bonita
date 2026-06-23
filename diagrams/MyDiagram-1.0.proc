@@ -76,9 +76,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_XyVbAG6HEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XyVbAW6HEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_XyVbAm6HEfGFG66_bEuG_g" name="atendimentoInput.nomePaciente" content="atendimentoInput?.nomePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_XyVbA26HEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_XyVbAm6HEfGFG66_bEuG_g" name="atendimentoInput.nomePaciente" content="     ?.nomePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_XyVbBG6HEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setNomePaciente">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
@@ -87,9 +85,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_XyVbBm6HEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XyVbB26HEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_XyVbCG6HEfGFG66_bEuG_g" name="atendimentoInput.cpfPaciente" content="atendimentoInput?.cpfPaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_XyVbCW6HEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_XyVbCG6HEfGFG66_bEuG_g" name="atendimentoInput.cpfPaciente" content="     ?.cpfPaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_XyVbCm6HEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setCpfPaciente">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
@@ -98,9 +94,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_XyVbDG6HEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XyVbDW6HEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_XyVbDm6HEfGFG66_bEuG_g" name="atendimentoInput.telefonePaciente" content="atendimentoInput?.telefonePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_XyVbD26HEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_XyVbDm6HEfGFG66_bEuG_g" name="atendimentoInput.telefonePaciente" content="     ?.telefonePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_XyVbEG6HEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setTelefonePaciente">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
@@ -109,11 +103,64 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_XyVbEm6HEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XyVbE26HEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_XyVbFG6HEfGFG66_bEuG_g" name="atendimentoInput.formaPagamento" content="atendimentoInput?.formaPagamento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_XyVbFW6HEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_XyVbFG6HEfGFG66_bEuG_g" name="atendimentoInput.formaPagamento" content="     ?.formaPagamento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_XyVbFm6HEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setFormaPagamento">
               <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Sk_V8G6TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Sk_V8W6TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Sk_V8m6TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Sk_V826TEfGFG66_bEuG_g" name="atendimentoInput.nomePaciente" content="atendimentoInput?.nomePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Sk_V9G6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Sk_V9W6TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setNomePaciente">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Sk_V9m6TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Sk_V926TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Sk_V-G6TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Sk_V-W6TEfGFG66_bEuG_g" name="atendimentoInput.cpfPaciente" content="atendimentoInput?.cpfPaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Sk_V-m6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Sk_V-26TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setCpfPaciente">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Sk_V_G6TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Sk_V_W6TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Sk_V_m6TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Sk_V_26TEfGFG66_bEuG_g" name="atendimentoInput.telefonePaciente" content="atendimentoInput?.telefonePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Sk_WAG6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Sk_WAW6TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setTelefonePaciente">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Sk_WAm6TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Sk_WA26TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Sk_WBG6TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Sk_WBW6TEfGFG66_bEuG_g" name="atendimentoInput.formaPagamento" content="atendimentoInput?.formaPagamento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Sk_WBm6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Sk_WB26TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setFormaPagamento">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Sk_WCG6TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Sk_WCW6TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Sk_WCm6TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Sk_WC26TEfGFG66_bEuG_g" name="atendimentoInput.agendado" content="atendimentoInput?.agendado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Sk_WDG6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Sk_WDW6TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setAgendado">
+              <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_9BR-E1PREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -122,14 +169,15 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_9BR-F1PREfG9dLD7G3QBDg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_9BR-FlPREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_JGGIOGOTEfGaD418Sxm7uA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_aWbvcG6HEfGFG66_bEuG_g" name="newForm" content="aadc661e-fe98-4027-8e40-0ea23e516dfa" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_bbzloG6TEfGFG66_bEuG_g" name="formCadatrarPaciente" content="daee0ac3-c776-4941-a5a4-8b54baf08939" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_JGGIN2OTEfGaD418Sxm7uA">
-            <inputs xmi:type="process:ContractInput" xmi:id="_XyTl0G6HEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" dataReference="atendimento" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_XyUM4G6HEfGFG66_bEuG_g" name="nomePaciente" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_XyUM4W6HEfGFG66_bEuG_g" name="cpfPaciente" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_XyUM4m6HEfGFG66_bEuG_g" name="telefonePaciente" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_XyUM426HEfGFG66_bEuG_g" name="formaPagamento" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_Sk-u4G6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" dataReference="atendimento" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Sk-u4W6TEfGFG66_bEuG_g" name="nomePaciente" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Sk-u4m6TEfGFG66_bEuG_g" name="cpfPaciente" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Sk-u426TEfGFG66_bEuG_g" name="telefonePaciente" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Sk-u5G6TEfGFG66_bEuG_g" name="formaPagamento" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Sk-u5W6TEfGFG66_bEuG_g" name="agendado" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_JGGIOmOTEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -142,9 +190,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_jY-_8G6FEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jY-_8W6FEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_jY-_8m6FEfGFG66_bEuG_g" name="atendimentoInput.nomePaciente" content="atendimentoInput?.nomePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_jY-_826FEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_jY-_8m6FEfGFG66_bEuG_g" name="atendimentoInput.nomePaciente" content="     ?.nomePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_jY-_9G6FEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setNomePaciente">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
@@ -153,9 +199,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_jY-_9m6FEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jY-_926FEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_jY-_-G6FEfGFG66_bEuG_g" name="atendimentoInput.cpfPaciente" content="atendimentoInput?.cpfPaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_jY-_-W6FEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_jY-_-G6FEfGFG66_bEuG_g" name="atendimentoInput.cpfPaciente" content="     ?.cpfPaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_jY-_-m6FEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setCpfPaciente">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
@@ -164,9 +208,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_jY-__G6FEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jY-__W6FEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_jY-__m6FEfGFG66_bEuG_g" name="atendimentoInput.telefonePaciente" content="atendimentoInput?.telefonePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_jY-__26FEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_jY-__m6FEfGFG66_bEuG_g" name="atendimentoInput.telefonePaciente" content="     ?.telefonePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_jY_AAG6FEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setTelefonePaciente">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
@@ -175,11 +217,64 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_jY_AAm6FEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jY_AA26FEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_jY_ABG6FEfGFG66_bEuG_g" name="atendimentoInput.formaPagamento" content="atendimentoInput?.formaPagamento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_jY_ABW6FEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_jY_ABG6FEfGFG66_bEuG_g" name="atendimentoInput.formaPagamento" content="     ?.formaPagamento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_jY_ABm6FEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setFormaPagamento">
               <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_n4uZUG6TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_n4uZUW6TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_n4vAYG6TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_n4vAYW6TEfGFG66_bEuG_g" name="atendimentoInput.nomePaciente" content="atendimentoInput?.nomePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_n4vAYm6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_n4vAY26TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setNomePaciente">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_n4vAZG6TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_n4vncG6TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_n4vncW6TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_n4vncm6TEfGFG66_bEuG_g" name="atendimentoInput.cpfPaciente" content="atendimentoInput?.cpfPaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_n4vnc26TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_n4vndG6TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setCpfPaciente">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_n4vndW6TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_n4vndm6TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_n4vnd26TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_n4vneG6TEfGFG66_bEuG_g" name="atendimentoInput.telefonePaciente" content="atendimentoInput?.telefonePaciente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_n4vneW6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_n4vnem6TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setTelefonePaciente">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_n4vne26TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_n4vnfG6TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_n4vnfW6TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_n4vnfm6TEfGFG66_bEuG_g" name="atendimentoInput.formaPagamento" content="atendimentoInput?.formaPagamento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_n4vnf26TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_n4vngG6TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setFormaPagamento">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_n4vngW6TEfGFG66_bEuG_g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_n4vngm6TEfGFG66_bEuG_g" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_n4vng26TEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_n4vnhG6TEfGFG66_bEuG_g" name="atendimentoInput.agendado" content="atendimentoInput?.agendado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_n4vnhW6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_n4vnhm6TEfGFG66_bEuG_g" type="JAVA_METHOD" expression="setAgendado">
+              <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_rjKhYlPREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -188,14 +283,15 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_rjKhZlPREfG9dLD7G3QBDg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_rjKhZVPREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_5MM8mWUtEfGEXrYvpS-i_A">
-            <targetForm xmi:type="expression:Expression" xmi:id="_D7PxQG6GEfGFG66_bEuG_g" name="formConfirmarCadastro" content="86607a10-baa6-47c0-acab-b0a435018f1c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_pqkxcG6TEfGFG66_bEuG_g" name="formConfirmarAtualizarCadastro" content="c84cbc41-2cc1-4279-9734-2115bcdb95ab" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_5MM8mGUtEfGEXrYvpS-i_A">
-            <inputs xmi:type="process:ContractInput" xmi:id="_jY9x0G6FEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" dataReference="atendimento" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_jY9x0W6FEfGFG66_bEuG_g" name="nomePaciente" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_jY9x0m6FEfGFG66_bEuG_g" name="cpfPaciente" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_jY9x026FEfGFG66_bEuG_g" name="telefonePaciente" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_jY9x1G6FEfGFG66_bEuG_g" name="formaPagamento" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_n4skIG6TEfGFG66_bEuG_g" name="atendimentoInput" type="COMPLEX" dataReference="atendimento" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_n4tLMG6TEfGFG66_bEuG_g" name="nomePaciente" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_n4tLMW6TEfGFG66_bEuG_g" name="cpfPaciente" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_n4tLMm6TEfGFG66_bEuG_g" name="telefonePaciente" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_n4tLM26TEfGFG66_bEuG_g" name="formaPagamento" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_n4tLNG6TEfGFG66_bEuG_g" name="agendado" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_5MM8m2UtEfGEXrYvpS-i_A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -298,7 +394,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_gWDvF2OQEfGaD418Sxm7uA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_gWDvFmOQEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_JwmvuWOREfGaD418Sxm7uA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_JwmvumOREfGaD418Sxm7uA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_dpIToG6lEfGFG66_bEuG_g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_JwmvuGOREfGaD418Sxm7uA"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Jwmvu2OREfGaD418Sxm7uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -418,9 +514,11 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_Kz_L8FfjEfGaAKjg7KE34A" name="sim" target="_dCIDsGOREfGaD418Sxm7uA" source="_6SE50FfXEfGaAKjg7KE34A">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Kz_L8VfjEfGaAKjg7KE34A"/>
-        <condition xmi:type="expression:Expression" xmi:id="_Kz_L8lfjEfGaAKjg7KE34A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_Kz_L8lfjEfGaAKjg7KE34A" name="pacienteAgendadoSim" content="return Boolean.TRUE.equals(atendimento.agendado)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_G8bh8G6UEfGFG66_bEuG_g" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+        </condition>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_Oxlp8FfjEfGaAKjg7KE34A" name="não" target="_topqYGnOEfGG3LJZ6zip9w" source="_6SE50FfXEfGaAKjg7KE34A">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_Oxlp8FfjEfGaAKjg7KE34A" name="não" target="_topqYGnOEfGG3LJZ6zip9w" source="_6SE50FfXEfGaAKjg7KE34A" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_OxoGMFfjEfGaAKjg7KE34A"/>
         <condition xmi:type="expression:Expression" xmi:id="_OxotQFfjEfGaAKjg7KE34A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
