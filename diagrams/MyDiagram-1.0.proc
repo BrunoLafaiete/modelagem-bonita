@@ -620,6 +620,18 @@
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_RmkvkGqmEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_RmjhcGqmEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_RmkvkWqmEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
+        <operations xmi:type="expression:Operation" xmi:id="_YWytsG9dEfGtvrE_zk-BVg">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_YW5bYG9dEfGtvrE_zk-BVg" name="consulta" content="consulta" type="TYPE_VARIABLE" returnType="clinicaOlho.model.Consulta">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZJQscG9dEfGtvrE_zk-BVg" name="consulta" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.Consulta"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_YW6CcG9dEfGtvrE_zk-BVg" name="setOcupadas" content="def ocupadas = consultaDAO.find(0, 100).findAll { it.medico == consulta.medico }&#xA;// regra simplificada: se o médico não tem nada marcado, o horário desejado fica disponível&#xA;return ocupadas.isEmpty() ? consulta.data_hora : null" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime">
+            <referencedElements xmi:type="expression:Expression" xmi:id="_eOx0wG9dEfGtvrE_zk-BVg" name="consultaDAO" content="consultaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="clinicaOlho.model.ConsultaDAO" returnTypeFixed="true"/>
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eO04EG9dEfGtvrE_zk-BVg" name="consulta" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.Consulta"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_YW6CcW9dEfGtvrE_zk-BVg" type="JAVA_METHOD" expression="setData_hora">
+            <inputTypes>java.time.OffsetDateTime</inputTypes>
+          </operator>
+        </operations>
         <loopCondition xmi:type="expression:Expression" xmi:id="_RmkvkmqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_Rmkvk2qmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_RmkvlGqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -634,20 +646,12 @@
           <leftOperand xmi:type="expression:Expression" xmi:id="_wiK68W8NEfGgR7pClmI30g" name="consulta" content="consulta" type="TYPE_VARIABLE" returnType="clinicaOlho.model.Consulta">
             <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_PDJJ8G8OEfGgR7pClmI30g" name="consulta" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.Consulta"/>
           </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_wiK68m8NEfGgR7pClmI30g" content=""/>
-          <operator xmi:type="expression:Operator" xmi:id="_wiK6828NEfGgR7pClmI30g" type="ASSIGNMENT"/>
-        </operations>
-        <operations xmi:type="expression:Operation" xmi:id="_vaaBoG8NEfGgR7pClmI30g">
-          <leftOperand xmi:type="expression:Expression" xmi:id="_vaaosG8NEfGgR7pClmI30g" name="consulta" content="consulta" type="TYPE_VARIABLE" returnType="clinicaOlho.model.Consulta">
-            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_IGfg4G8OEfGgR7pClmI30g" name="consulta" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.Consulta"/>
-          </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_vaaosW8NEfGgR7pClmI30g" name="consultaInput.medico" content="consultaInput.medico" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-            <referencedElements xmi:type="process:ContractInput" xmi:id="_A0SekG8OEfGgR7pClmI30g" name="consultaInput" type="COMPLEX">
-              <mapping xmi:type="process:ContractInputMapping" xmi:id="_A0TFoG8OEfGgR7pClmI30g"/>
-            </referencedElements>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_wiK68m8NEfGgR7pClmI30g" name="newScript()" content="def todas = consultaDAO.find(0, 100)                                                                                                                                                                                              &#xA;return todas.isEmpty() ? consulta.data_hora : consulta.data_hora" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime">
+            <referencedElements xmi:type="expression:Expression" xmi:id="_xiycEG9dEfGtvrE_zk-BVg" name="consultaDAO" content="consultaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="clinicaOlho.model.ConsultaDAO" returnTypeFixed="true"/>
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_xizDIG9dEfGtvrE_zk-BVg" name="consulta" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.Consulta"/>
           </rightOperand>
-          <operator xmi:type="expression:Operator" xmi:id="_vaaosm8NEfGgR7pClmI30g" type="JAVA_METHOD" expression="setMedico">
-            <inputTypes>java.lang.String</inputTypes>
+          <operator xmi:type="expression:Operator" xmi:id="_wiK6828NEfGgR7pClmI30g" type="JAVA_METHOD" expression="setData_hora">
+            <inputTypes>java.time.OffsetDateTime</inputTypes>
           </operator>
         </operations>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_VU40ZGqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
