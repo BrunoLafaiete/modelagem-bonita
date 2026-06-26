@@ -127,6 +127,39 @@
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT10TipoServOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT10TipoServLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT10TipoServLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT10TipoServRO" name="atendimentoInput.tipoServico" content="atendimentoInput?.tipoServico" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT10TipoServRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT10TipoServOpr" type="JAVA_METHOD" expression="setTipoServico">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT10ExProcOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT10ExProcLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT10ExProcLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT10ExProcRO" name="atendimentoInput.exameOuProcedimento" content="atendimentoInput?.exameOuProcedimento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT10ExProcRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT10ExProcOpr" type="JAVA_METHOD" expression="setExameOuProcedimento">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT10GuiaOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT10GuiaLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT10GuiaLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT10GuiaRO" name="atendimentoInput.possuiGuia" content="atendimentoInput?.possuiGuia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT10GuiaRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT10GuiaOpr" type="JAVA_METHOD" expression="setPossuiGuia">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_9BR-E1PREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_9BR-FFPREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_9BR-FVPREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -142,6 +175,9 @@
               <inputs xmi:type="process:ContractInput" xmi:id="_Sk-u426TEfGFG66_bEuG_g" name="telefonePaciente" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_Sk-u5G6TEfGFG66_bEuG_g" name="formaPagamento" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_Sk-u5W6TEfGFG66_bEuG_g" name="agendado" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT10InTipoServ" name="tipoServico" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT10InExProc" name="exameOuProcedimento" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT10InGuia" name="possuiGuia" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_JGGIOmOTEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -205,6 +241,39 @@
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT00TipoServOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT00TipoServLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT00TipoServLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT00TipoServRO" name="atendimentoInput.tipoServico" content="atendimentoInput?.tipoServico" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT00TipoServRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT00TipoServOpr" type="JAVA_METHOD" expression="setTipoServico">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT00ExProcOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT00ExProcLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT00ExProcLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT00ExProcRO" name="atendimentoInput.exameOuProcedimento" content="atendimentoInput?.exameOuProcedimento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT00ExProcRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT00ExProcOpr" type="JAVA_METHOD" expression="setExameOuProcedimento">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT00GuiaOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT00GuiaLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT00GuiaLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT00GuiaRO" name="atendimentoInput.possuiGuia" content="atendimentoInput?.possuiGuia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT00GuiaRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT00GuiaOpr" type="JAVA_METHOD" expression="setPossuiGuia">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_rjKhYlPREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_rjKhY1PREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_rjKhZFPREfG9dLD7G3QBDg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -220,6 +289,9 @@
               <inputs xmi:type="process:ContractInput" xmi:id="_n4tLMm6TEfGFG66_bEuG_g" name="telefonePaciente" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_n4tLM26TEfGFG66_bEuG_g" name="formaPagamento" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_n4tLNG6TEfGFG66_bEuG_g" name="agendado" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT00InTipoServ" name="tipoServico" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT00InExProc" name="exameOuProcedimento" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT00InGuia" name="possuiGuia" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_5MM8m2UtEfGEXrYvpS-i_A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -307,6 +379,28 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_A6wAgVfkEfGaAKjg7KE34A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_A6wAgFfkEfGaAKjg7KE34A" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_A6wAglfkEfGaAKjg7KE34A" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT60PrecOutroOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT60PrecOutroLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT60PrecOutroLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT60PrecOutroRO" name="atendimentoInput.precisaOutroServico" content="atendimentoInput?.precisaOutroServico" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT60PrecOutroRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT60PrecOutroOpr" type="JAVA_METHOD" expression="setPrecisaOutroServico">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT60LenteOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT60LenteLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT60LenteLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT60LenteRO" name="atendimentoInput.lenteContato" content="atendimentoInput?.lenteContato" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT60LenteRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT60LenteOpr" type="JAVA_METHOD" expression="setLenteContato">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_A6wAg1fkEfGaAKjg7KE34A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_A6wAhFfkEfGaAKjg7KE34A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_A6wAhVfkEfGaAKjg7KE34A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -315,13 +409,40 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_ULnA52OPEfGaD418Sxm7uA">
             <targetForm xmi:type="expression:Expression" xmi:id="_kBHec29rEfGtvrE_zk-BVg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_ULnA5mOPEfGaD418Sxm7uA"/>
+          <contract xmi:type="process:Contract" xmi:id="_ULnA5mOPEfGaD418Sxm7uA">
+            <inputs xmi:type="process:ContractInput" xmi:id="_fixT60AtdIn" name="atendimentoInput" type="COMPLEX" dataReference="atendimento" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT60InPrecOutro" name="precisaOutroServico" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT60InLente" name="lenteContato" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ULnn8GOPEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_Jwk6gGOREfGaD418Sxm7uA" name="T50 - Registrar informações obtidas na consulta" outgoing="_by5bAGOSEfGaD418Sxm7uA" incoming="_gWRKcGOQEfGaD418Sxm7uA" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_gWDvEWOQEfGaD418Sxm7uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_gWDvEGOQEfGaD418Sxm7uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_gWDvEmOQEfGaD418Sxm7uA" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT50PrecOutroOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT50PrecOutroLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT50PrecOutroLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT50PrecOutroRO" name="atendimentoInput.precisaOutroServico" content="atendimentoInput?.precisaOutroServico" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT50PrecOutroRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT50PrecOutroOpr" type="JAVA_METHOD" expression="setPrecisaOutroServico">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT50LenteOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT50LenteLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT50LenteLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT50LenteRO" name="atendimentoInput.lenteContato" content="atendimentoInput?.lenteContato" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT50LenteRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT50LenteOpr" type="JAVA_METHOD" expression="setLenteContato">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_gWDvE2OQEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_gWDvFGOQEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_gWDvFWOQEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -330,7 +451,12 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_JwmvuWOREfGaD418Sxm7uA">
             <targetForm xmi:type="expression:Expression" xmi:id="_kBHedG9rEfGtvrE_zk-BVg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_JwmvuGOREfGaD418Sxm7uA"/>
+          <contract xmi:type="process:Contract" xmi:id="_JwmvuGOREfGaD418Sxm7uA">
+            <inputs xmi:type="process:ContractInput" xmi:id="_fixT50AtdIn" name="atendimentoInput" type="COMPLEX" dataReference="atendimento" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT50InPrecOutro" name="precisaOutroServico" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT50InLente" name="lenteContato" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Jwmvu2OREfGaD418Sxm7uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
@@ -356,6 +482,28 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_lPTycGOPEfGaD418Sxm7uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_lPTLYGOPEfGaD418Sxm7uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_lPTycWOPEfGaD418Sxm7uA" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT70PrecOutroOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT70PrecOutroLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT70PrecOutroLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT70PrecOutroRO" name="atendimentoInput.precisaOutroServico" content="atendimentoInput?.precisaOutroServico" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT70PrecOutroRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT70PrecOutroOpr" type="JAVA_METHOD" expression="setPrecisaOutroServico">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fixT70LenteOp">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fixT70LenteLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT70LenteLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fixT70LenteRO" name="atendimentoInput.lenteContato" content="atendimentoInput?.lenteContato" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT70LenteRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fixT70LenteOpr" type="JAVA_METHOD" expression="setLenteContato">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_lPTycmOPEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_lPTyc2OPEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_lPTydGOPEfGaD418Sxm7uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -364,7 +512,12 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_KOeXeGOREfGaD418Sxm7uA">
             <targetForm xmi:type="expression:Expression" xmi:id="_kBHedm9rEfGtvrE_zk-BVg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_KOeXd2OREfGaD418Sxm7uA"/>
+          <contract xmi:type="process:Contract" xmi:id="_KOeXd2OREfGaD418Sxm7uA">
+            <inputs xmi:type="process:ContractInput" xmi:id="_fixT70AtdIn" name="atendimentoInput" type="COMPLEX" dataReference="atendimento" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT70InPrecOutro" name="precisaOutroServico" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_fixT70InLente" name="lenteContato" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_KOeXemOREfGaD418Sxm7uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
@@ -621,6 +774,17 @@
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_RmkvkGqmEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_RmjhcGqmEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_RmkvkWqmEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
+        <operations xmi:type="expression:Operation" xmi:id="_fixT310HorDispOp">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_fixT310HorDispLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT310HorDispLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_fixT310HorDispRO" name="atendimentoInput.horarioDisponivel" content="atendimentoInput?.horarioDisponivel" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT310HorDispRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_fixT310HorDispOpr" type="JAVA_METHOD" expression="setHorarioDisponivel">
+            <inputTypes>java.lang.Boolean</inputTypes>
+          </operator>
+        </operations>
         <loopCondition xmi:type="expression:Expression" xmi:id="_RmkvkmqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_Rmkvk2qmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_RmkvlGqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -630,6 +794,9 @@
           <targetForm xmi:type="expression:Expression" xmi:id="_j-irkG9rEfGtvrE_zk-BVg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_nye3dmquEfGJ4sykcPaQUw">
+          <inputs xmi:type="process:ContractInput" xmi:id="_fixT310AtdIn" name="atendimentoInput" type="COMPLEX" dataReference="atendimento" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_fixT310AtdInHor" name="horarioDisponivel" type="BOOLEAN" createMode="false"/>
+          </inputs>
           <inputs xmi:type="process:ContractInput" xmi:id="_CmtJUG8MEfGgR7pClmI30g" name="consultaInput" type="COMPLEX">
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_CmtwYG8MEfGgR7pClmI30g"/>
             <inputs xmi:type="process:ContractInput" xmi:id="_EgnRQG8MEfGgR7pClmI30g" name="data_hora" type="LOCALDATETIME">
@@ -665,6 +832,17 @@
             <inputTypes>java.lang.String</inputTypes>
           </operator>
         </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_fixT320HorDispOp">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_fixT320HorDispLO" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fixT320HorDispLORef" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_fixT320HorDispRO" name="atendimentoInput.horarioDisponivel" content="atendimentoInput?.horarioDisponivel" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_fixT320HorDispRORef" name="atendimentoInput" type="COMPLEX" createMode="false"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_fixT320HorDispOpr" type="JAVA_METHOD" expression="setHorarioDisponivel">
+            <inputTypes>java.lang.Boolean</inputTypes>
+          </operator>
+        </operations>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_VU40ZGqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_VU40ZWqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_VU40Z2qmEfGJ4sykcPaQUw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
@@ -673,8 +851,14 @@
           <targetForm xmi:type="expression:Expression" xmi:id="_j-irkW9rEfGtvrE_zk-BVg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_oFZzeGquEfGJ4sykcPaQUw">
+          <inputs xmi:type="process:ContractInput" xmi:id="_fixT320AtdIn" name="atendimentoInput" type="COMPLEX" dataReference="atendimento" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_fixT320AtdInHor" name="horarioDisponivel" type="BOOLEAN" createMode="false"/>
+          </inputs>
           <inputs xmi:type="process:ContractInput" xmi:id="_osQHkG8NEfGgR7pClmI30g" name="consultaInput" type="COMPLEX">
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_osQHkW8NEfGgR7pClmI30g"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_fixT320Medico" name="medico">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_fixT320MedicoMap"/>
+            </inputs>
             <inputs xmi:type="process:ContractInput" xmi:id="_qjLM8G8NEfGgR7pClmI30g" name="data_hora">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_qjLM8W8NEfGgR7pClmI30g"/>
             </inputs>
