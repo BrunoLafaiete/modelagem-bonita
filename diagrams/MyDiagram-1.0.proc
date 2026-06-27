@@ -306,7 +306,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_torfmWnOEfGG3LJZ6zip9w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_torfmGnOEfGG3LJZ6zip9w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <inputMappings xmi:type="process:InputMapping" xmi:id="_wvkyQG9kEfGtvrE_zk-BVg" subprocessTarget="atendimentoInput">
-            <processSource xmi:type="expression:Expression" xmi:id="_wvlZUG9kEfGtvrE_zk-BVg" name="atendimento" content="atendimento" type="TYPE_VARIABLE" returnType="clinicaOlho.model.AtendimentoOftalmologico">
+            <processSource xmi:type="expression:Expression" xmi:id="_wvlZUG9kEfGtvrE_zk-BVg" name="mapAtendimentoInput" content="[horarioEscolhido: atendimento?.horarioEscolhido, profissionalEspecifico: atendimento?.profissionalEspecifico, profissionalSolicitado: atendimento?.profissionalSolicitado]" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Map">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Tqe18G9lEfGtvrE_zk-BVg" name="atendimento" dataType="_f4jRRx4XEfG_jsm1Ob_k5A" className="clinicaOlho.model.AtendimentoOftalmologico"/>
             </processSource>
           </inputMappings>
