@@ -790,7 +790,7 @@
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_1AC5QGnPEfGG3LJZ6zip9w" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_1ADgUWnPEfGG3LJZ6zip9w" name="" content="" returnTypeFixed="true"/>
       </elements>
-      <elements xmi:type="process:XORGateway" xmi:id="_6EMIkGnPEfGG3LJZ6zip9w" name="profissional específico?" outgoing="_RnKlcGqmEfGJ4sykcPaQUw _VVYjoGqmEfGJ4sykcPaQUw" incoming="_Kc2T0GqmEfGJ4sykcPaQUw _fixFlowLimRetry">
+      <elements xmi:type="process:XORGateway" xmi:id="_6EMIkGnPEfGG3LJZ6zip9w" name="profissional específico?" outgoing="_RnKlcGqmEfGJ4sykcPaQUw _VVYjoGqmEfGJ4sykcPaQUw" incoming="_Kc2T0GqmEfGJ4sykcPaQUw _Av538GqnEfGJ4sykcPaQUw">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_40lh4WnPEfGG3LJZ6zip9w" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_40lh4GnPEfGG3LJZ6zip9w" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_40mI8GnPEfGG3LJZ6zip9w" name="" content="" returnTypeFixed="true"/>
@@ -810,16 +810,6 @@
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_NqPncGqnEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_NqPncmqnEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
       </elements>
-      <elements xmi:type="process:XORGateway" xmi:id="_fixLimiteGW" name="limite de tentativas atingido?" outgoing="_fixFlowLimEnd _fixFlowLimRetry" incoming="_Av538GqnEfGJ4sykcPaQUw">
-        <dynamicLabel xmi:type="expression:Expression" xmi:id="_fixLimiteGWdl" name="" content="" returnTypeFixed="true"/>
-        <dynamicDescription xmi:type="expression:Expression" xmi:id="_fixLimiteGWdd" name="" content="" returnTypeFixed="true"/>
-        <stepSummary xmi:type="expression:Expression" xmi:id="_fixLimiteGWss" name="" content="" returnTypeFixed="true"/>
-      </elements>
-      <elements xmi:type="process:EndEvent" xmi:id="_fixEnd5" name="Agendamento não realizado" incoming="_fixFlowLimEnd">
-        <dynamicLabel xmi:type="expression:Expression" xmi:id="_fixEnd5dl" name="" content="" returnTypeFixed="true"/>
-        <dynamicDescription xmi:type="expression:Expression" xmi:id="_fixEnd5dd" name="" content="" returnTypeFixed="true"/>
-        <stepSummary xmi:type="expression:Expression" xmi:id="_fixEnd5ss" name="" content="" returnTypeFixed="true"/>
-      </elements>
       <elements xmi:type="process:Task" xmi:id="_nyQN8GquEfGJ4sykcPaQUw" name="T310 - Verificar agenda do profissional escolhido" outgoing="_r5rP8GqmEfGJ4sykcPaQUw" incoming="_RnKlcGqmEfGJ4sykcPaQUw" actor="_tpwdoGnOEfGG3LJZ6zip9w">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_RmkvkGqmEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_RmjhcGqmEfGJ4sykcPaQUw" name="" content="" returnTypeFixed="true"/>
@@ -834,15 +824,6 @@
           <operator xmi:type="expression:Operator" xmi:id="_fixT310HorDispOpr" type="JAVA_METHOD" expression="setHorarioDisponivel">
             <inputTypes>java.lang.Boolean</inputTypes>
           </operator>
-        </operations>
-        <operations xmi:type="expression:Operation" xmi:id="_fixT310IncOp">
-          <leftOperand xmi:type="expression:Expression" xmi:id="_fixT310IncLO" name="tentativas" content="tentativas" type="TYPE_VARIABLE" returnType="java.lang.Integer">
-            <referencedElements xmi:type="process:Data" xmi:id="_fixT310IncLORef" name="tentativas" dataType="_f4jRQR4XEfG_jsm1Ob_k5A"/>
-          </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_fixT310IncRO" name="incrementaTentativas" content="(tentativas ?: 0) + 1" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-            <referencedElements xmi:type="process:Data" xmi:id="_fixT310IncRORef" name="tentativas" dataType="_f4jRQR4XEfG_jsm1Ob_k5A"/>
-          </rightOperand>
-          <operator xmi:type="expression:Operator" xmi:id="_fixT310IncOpr" type="ASSIGNMENT" expression="="/>
         </operations>
         <loopCondition xmi:type="expression:Expression" xmi:id="_RmkvkmqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_Rmkvk2qmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -901,15 +882,6 @@
           <operator xmi:type="expression:Operator" xmi:id="_fixT320HorDispOpr" type="JAVA_METHOD" expression="setHorarioDisponivel">
             <inputTypes>java.lang.Boolean</inputTypes>
           </operator>
-        </operations>
-        <operations xmi:type="expression:Operation" xmi:id="_fixT320IncOp">
-          <leftOperand xmi:type="expression:Expression" xmi:id="_fixT320IncLO" name="tentativas" content="tentativas" type="TYPE_VARIABLE" returnType="java.lang.Integer">
-            <referencedElements xmi:type="process:Data" xmi:id="_fixT320IncLORef" name="tentativas" dataType="_f4jRQR4XEfG_jsm1Ob_k5A"/>
-          </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_fixT320IncRO" name="incrementaTentativas" content="(tentativas ?: 0) + 1" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-            <referencedElements xmi:type="process:Data" xmi:id="_fixT320IncRORef" name="tentativas" dataType="_f4jRQR4XEfG_jsm1Ob_k5A"/>
-          </rightOperand>
-          <operator xmi:type="expression:Operator" xmi:id="_fixT320IncOpr" type="ASSIGNMENT" expression="="/>
         </operations>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_VU40ZGqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_VU40ZWqmEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -988,9 +960,6 @@
           <referencedElements xmi:type="process:ContractInput" xmi:id="_zP7ZsW9lEfGtvrE_zk-BVg" name="atendimentoInput" type="COMPLEX"/>
         </defaultValue>
       </data>
-      <data xmi:type="process:Data" xmi:id="_fixTentativasData" documentation="Contador de tentativas de agendamento (proteção contra loop infinito)" name="tentativas" dataType="_f4jRQR4XEfG_jsm1Ob_k5A">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_fixTentativasDefault" name="0" content="0" returnType="java.lang.Integer"/>
-      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_toggcGnOEfGG3LJZ6zip9w">
         <targetForm xmi:type="expression:Expression" xmi:id="_ASyK03G9EfGnS9c--A0G_A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -1023,19 +992,9 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_7QheIGqmEfGJ4sykcPaQUw"/>
         <condition xmi:type="expression:Expression" xmi:id="_7QheIWqmEfGJ4sykcPaQUw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_Av538GqnEfGJ4sykcPaQUw" name="não" target="_fixLimiteGW" source="_8EDz4GqmEfGJ4sykcPaQUw" isDefault="true">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_Av538GqnEfGJ4sykcPaQUw" name="não" target="_6EMIkGnPEfGG3LJZ6zip9w" source="_8EDz4GqmEfGJ4sykcPaQUw" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_AwBMsGqnEfGJ4sykcPaQUw"/>
         <condition xmi:type="expression:Expression" xmi:id="_AwBzwGqnEfGJ4sykcPaQUw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-      </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_fixFlowLimEnd" name="sim" target="_fixEnd5" source="_fixLimiteGW">
-        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_fixFlowLimEndDT"/>
-        <condition xmi:type="expression:Expression" xmi:id="_fixFlowLimEndCond" name="limiteAtingido" content="return (tentativas ?: 0) &gt;= 3" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_fixFlowLimEndRef" name="tentativas" dataType="_f4jRQR4XEfG_jsm1Ob_k5A"/>
-        </condition>
-      </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_fixFlowLimRetry" name="não" target="_6EMIkGnPEfGG3LJZ6zip9w" source="_fixLimiteGW" isDefault="true">
-        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_fixFlowLimRetryDT"/>
-        <condition xmi:type="expression:Expression" xmi:id="_fixFlowLimRetryCond" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_JKuvMGqnEfGJ4sykcPaQUw" name="sim" target="_ocD_8GquEfGJ4sykcPaQUw" source="_8EDz4GqmEfGJ4sykcPaQUw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_JKvWQGqnEfGJ4sykcPaQUw"/>
